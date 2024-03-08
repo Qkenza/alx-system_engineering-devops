@@ -1,17 +1,12 @@
 #!/usr/bin/env bash
-# Loop 10 times and prints Best School in each iteration
-# except the 4th iteration print bad luck and the 8th iteration print good luck
-i=0
-while [ $i -lt 10 ]
-do
-	((i++))
-	if [ $i -eq 4 ]
-	then
-		echo "bad luck"
-	elif [ $i -eq 8 ]
-	then
-		echo "good luck"
-	else
-		echo "Best School"
-	fi
+# This script is displaying "Best School" 10 times
+counter=0
+while ((counter++<10)); do
+    if [[ $counter -eq 8 ]]; then
+        echo "good luck"
+    elif [[ $counter -eq 4 ]]; then
+        echo "bad luck"
+    else
+        echo "Best School"
+    fi
 done

@@ -1,8 +1,6 @@
 #!/usr/bin/env bash
-# Loop 10 times and prints Best School in each iteration
-i=0
-while [ $i -lt 10 ]
-do
-	echo "Best School"
-	((i++))
+# This script is displaying "Best School" 10 times
+counter=0
+while ((counter++<10)); do
+    echo "Best School"
 done
